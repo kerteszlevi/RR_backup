@@ -1,0 +1,19 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.ReelRecall" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">@color/rr_lightred</item>
+        <item name="colorPrimaryVariant">#BE3559</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <item name="colorAccent">@color/rr_blue</item>
+        <item name="android:navigationBarColor">@color/rr_verylightred</item>"
+<!--        <item name="android:windowBackground">@color/rr_verylightred</item>-->
+    </style>
+
+    <style name="Theme.ReelRecall" parent="Base.Theme.ReelRecall">
+        <item name = "windowActionBar">false</item>
+        <item name = "windowNoTitle">true</item>
+    </style>
+</resources>

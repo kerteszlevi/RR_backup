@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/movies"
+        android:title="Movies"
+        android:icon="@drawable/movies_icon"/>
+
+    <item
+        android:id="@+id/series"
+        android:title="Series"
+        android:icon="@drawable/series_icon"/>
+
+    <item
+        android:id="@+id/watchlist"
+        android:title="Watchlist"
+        android:icon="@drawable/watchlist_icon"/>
+
+    <item
+        android:id="@+id/settings"
+        android:title="Settings"
+        android:icon="@drawable/settings_icon"/>
+
+</menu>
