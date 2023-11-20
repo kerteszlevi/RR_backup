@@ -6,8 +6,11 @@ import androidx.room.Room
 import androidx.room.RoomDatabase
 import androidx.room.TypeConverter
 import androidx.room.TypeConverters
+import hu.bme.aut.android.reelrecall.Converters
 
 @Database(entities = [MovieItem::class], version = 1)
+//uri - string conversion in converters class
+@TypeConverters(Converters::class)
 abstract class MovieListDatabase : RoomDatabase (){
     abstract fun movieItemDao(): MovieItemDao
 

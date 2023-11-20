@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <ImageButton
+            android:id="@+id/ibAddCover"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="7"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/add_cover_poster_icon" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/etMovieTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Movie Title" />
+
+            <EditText
+                android:id="@+id/etMovieDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Movie Description"
+                android:inputType="textMultiLine"
+                android:maxLines="5"
+                android:scrollbars="vertical" />
+
+            <EditText
+                android:id="@+id/etPlaytime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Playtime (minutes)"
+                android:inputType="numberDecimal" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rating:"
+            android:textSize="20sp" />
+
+        <SeekBar
+            android:id="@+id/sbRating"
+            style="@style/Widget.AppCompat.SeekBar.Discrete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:max="9"
+            android:progress="4" />
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/cbSeen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Seen"
+        android:textAlignment="viewStart" />
+
+    <CheckBox
+        android:id="@+id/cbWatchlist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add to watchlist" />
+
+    <Button
+        android:id="@+id/btnDeleteMovie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#D50000"
+        android:text="Delete Movie" />
+
+    <Button
+        android:id="@+id/btnSaveChanges"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#66BB6A"
+        android:text="Save Changes" />
+
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#5C5C5C"
+        android:text="Cancel" />
+
+</LinearLayout>

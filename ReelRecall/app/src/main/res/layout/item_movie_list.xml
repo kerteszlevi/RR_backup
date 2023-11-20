@@ -4,17 +4,41 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="horizontal"
-    android:paddingBottom="8dp"
     android:paddingLeft="16dp"
+    android:paddingTop="8dp"
     android:paddingRight="16dp"
-    android:paddingTop="8dp">
+    android:paddingBottom="8dp"
+    android:id="@+id/lySingleItem">
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="16dp"
+    <RelativeLayout
+        android:layout_width="30dp"
         android:layout_height="wrap_content"
         android:layout_weight="0.3"
-        android:src="@drawable/watchlist_icon" />
+        android:gravity="center"
+        android:id="@+id/rlPoster">
+
+        <ImageView
+            android:id="@+id/ivPoster"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="0.3"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/poster_placeholder" />
+
+        <ImageView
+            android:id="@+id/ivSeenMark"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/checked"
+            android:visibility="visible" />
+    </RelativeLayout>
 
     <LinearLayout
         android:layout_width="0dp"
@@ -26,7 +50,7 @@
 
         <TextView
             android:id="@+id/tvTitle"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textSize="20sp"
             tools:text="Title" />
@@ -37,10 +61,18 @@
             android:layout_height="wrap_content"
             android:text="Rating" />
 
+        <TextView
+            android:id="@+id/tvTmdbRating"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="tmdb rating"
+            android:textStyle="italic"
+            android:visibility="gone" />
+
     </LinearLayout>
 
     <ImageButton
-        android:id="@+id/editItem"
+        android:id="@+id/ibEditMovie"
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="50dp"
         android:layout_height="50dp"
