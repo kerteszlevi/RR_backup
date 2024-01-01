@@ -1,3 +1,5 @@
+# //Másolat a Mobil- és webes szoftverek tárgyra készített házi feladatomról//
+
 # Házi feladat specifikáció
 
 ## Mobil- és webes szoftverek
