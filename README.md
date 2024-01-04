@@ -33,3 +33,18 @@ A kezdőképernyő egy lista a megtekintett filmekről, a személyes értékelé
 - RecyclerView
 - Perzisztens adattárolás(Room)
 - Fragmentek
+
+## Képernyőképek:
+
+## Filmek listája:
+![movies.png](screenshots%2Fmovies.png)
+
+## Keresés:
+![search1.png](screenshots%2Fsearch1.png)
+![search2.png](screenshots%2Fsearch2.png)
+
+## Elem szerkesztése:
+![edit.png](screenshots%2Fedit.png)
+
+## Import/export:
+![settings.png](screenshots%2Fsettings.png)
